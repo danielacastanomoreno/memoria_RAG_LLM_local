@@ -1,0 +1,22 @@
+[project]
+name = "memoria-rag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Franjomo", email = "jjrh2003@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "anthropic>=2.3.0",
+    "chromadb>=1.5.9",
+    "pypdf>=6.21.4",
+    "sentence-transformers>=6.2.0",
+]
+
+[project.scripts]
+memoria-rag = "memoria_rag:main"
+
+[build-system]
+requires = ["uv_build>=0.13.4,<0.14.0"]
+build-backend = "uv_build"
